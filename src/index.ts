@@ -2,7 +2,6 @@ export class NumericArrayInteger {
   private elementBitLength: number;
   private arrayLength: number;
   private data: number;
-  static DEFAULT_LENGTH = 31;
 
   constructor(elementBitLength: number, arrayLength: number) {
     if (2 ** (elementBitLength * arrayLength) >= Number.MAX_SAFE_INTEGER) {
