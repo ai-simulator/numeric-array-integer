@@ -56,7 +56,6 @@ export class NumericArrayInteger {
     }
     const mask = value << (position * this.elementBitLength);
     this.data |= mask;
-    console.log('bits', this.getBits(), this.getBits().length);
   }
 
   clearPos(position: number) {
