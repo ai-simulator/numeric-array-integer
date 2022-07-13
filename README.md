@@ -27,3 +27,7 @@ console.log(integer2.getPos(2)); // 2
 ```
 
 For more examples, see https://github.com/paradite/numeric-array-integer/blob/main/test/index.test.ts
+
+## Related
+
+- [mask-flags](https://github.com/paradite/mask-flags): A wrapper around this library to implment feature flags in JavaScript.

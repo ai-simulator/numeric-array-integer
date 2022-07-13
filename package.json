@@ -1,6 +1,6 @@
 {
   "name": "numeric-array-integer",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "JavaScript numeric array implemented using an integer",
   "main": "dist/index.js",
   "scripts": {
