@@ -1,7 +1,7 @@
 {
   "name": "numeric-array-integer",
-  "version": "1.0.1",
-  "description": "numeric array in an integer",
+  "version": "1.0.2",
+  "description": "JavaScript numeric array implemented using an integer",
   "main": "dist/index.js",
   "scripts": {
     "test": "jest",
@@ -13,6 +13,13 @@
   },
   "author": "paradite",
   "license": "MIT",
+  "keywords": [
+    "numeric",
+    "array",
+    "integer",
+    "bitwise",
+    "bit"
+  ],
   "devDependencies": {
     "@babel/cli": "^7.16.8",
     "@babel/core": "^7.16.7",
