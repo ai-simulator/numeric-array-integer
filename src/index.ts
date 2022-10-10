@@ -50,7 +50,7 @@ export class NumericArrayInteger {
     if (position > this.arrayLength) {
       throw new Error('Position exceeds length');
     }
-    if (value > 2 ** this.elementBitLength) {
+    if (value >= 2 ** this.elementBitLength) {
       throw new Error('Value exceeds bit length');
     }
     const mask = value << (position * this.elementBitLength);

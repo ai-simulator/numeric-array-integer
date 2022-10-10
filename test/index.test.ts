@@ -32,9 +32,14 @@ describe('NumericArrayInteger', () => {
     expect(() => integer.clearPos(13)).toThrowError('Position exceeds length');
   });
 
-  it('set position throw error for invalid value', () => {
+  it('set position handle boundry and invalid value', () => {
     const integer = new NumericArrayInteger(4, 10);
-    expect(() => integer.setPos(1, 17)).toThrowError(
+    integer.setPos(1, 2 ** 4 - 1);
+    expect(integer.getPos(1)).toEqual(2 ** 4 - 1);
+    expect(() => integer.setPos(1, 2 ** 4 + 1)).toThrowError(
+      'Value exceeds bit length'
+    );
+    expect(() => integer.setPos(1, 2 ** 4)).toThrowError(
       'Value exceeds bit length'
     );
   });

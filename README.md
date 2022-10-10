@@ -16,12 +16,21 @@ $ yarn add numeric-array-integer
 ## Usage:
 
 ```js
+// Initialize new NumericArrayInteger with bits per number 4 (max number is 2^4-1, 15), total bit length 10
 const integer = new NumericArrayInteger(4, 10);
+
+// Set number at position
 integer.setPos(0, 3);
 integer.setPos(2, 2);
+
+// Get data as an integer
 const data = integer.getData();
 console.log(data); // 515
+
+// Load data from an integer
 const integer2 = NumericArrayInteger.fromData(data, 4, 10);
+
+// Get back original number at position
 console.log(integer2.getPos(0)); // 3
 console.log(integer2.getPos(2)); // 2
 ```
